@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  (function(){
+    var m = document.cookie.match('(^|;)\\s*easantos_theme\\s*=\\s*([^;]+)');
+    if(m && decodeURIComponent(m[2]) === 'dark'){
+      document.documentElement.setAttribute('data-theme','dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; E A Santos Investments Inc.</title>
+<meta name="description" content="Privacy Policy of E A Santos Investments Inc., describing how personal information is collected, used, and protected under PIPEDA and BC PIPA.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3EFE8;
+    --cream-deep:#EBE5DE;
+    --ink:#423A31;
+    --taupe:#857A6B;
+    --taupe-soft:#A79C8B;
+    --bronze:#A9834F;
+    --hairline:#D8D0C2;
+    --charcoal:#2E2820;
+    --charcoal-soft:#4A4038;
+    --nav-bg:rgba(243,239,232,0.92);
+  }
+  html[data-theme="dark"]{
+    --cream:#1C1712;
+    --cream-deep:#251F18;
+    --ink:#F0EBE2;
+    --taupe:#B8AC97;
+    --taupe-soft:#8C806C;
+    --bronze:#D4A96B;
+    --hairline:#3A3226;
+    --charcoal:#0E0B08;
+    --charcoal-soft:#C9C1B2;
+    --nav-bg:rgba(28,23,18,0.9);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;transition:background-color .35s ease, border-color .35s ease, color .35s ease;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Jost',sans-serif;
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{font-family:'Cormorant',serif;font-weight:500;letter-spacing:0.02em;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 40px;}
+
+  nav{
+    position:fixed;top:0;left:0;right:0;
+    background:var(--nav-bg);
+    backdrop-filter:blur(8px);
+    z-index:100;
+    border-bottom:1px solid var(--hairline);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;height:78px;
+    max-width:1180px;
+  }
+  .nav-brand span{
+    font-family:'Cormorant',serif;font-size:1.05rem;letter-spacing:0.18em;
+    color:var(--ink);text-transform:uppercase;
+  }
+  .nav-back{
+    font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--charcoal-soft);position:relative;padding-bottom:6px;transition:color .3s;
+  }
+  .nav-back::after{
+    content:'';position:absolute;bottom:0;left:0;width:0;height:1px;
+    background:var(--bronze);transition:width .35s ease;
+  }
+  .nav-back:hover{color:var(--ink);}
+  .nav-back:hover::after{width:100%;}
+
+  .page{padding:190px 0 120px;}
+  .eyebrow{
+    font-family:'Jost',sans-serif;font-size:0.72rem;letter-spacing:0.32em;
+    text-transform:uppercase;color:var(--bronze);font-weight:500;
+  }
+  h1{font-size:clamp(2.2rem,5vw,3.2rem);color:var(--ink);margin:18px 0 8px;}
+  .effective{
+    font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--taupe);margin-bottom:56px;
+  }
+  h2{font-size:1.45rem;color:var(--ink);margin:52px 0 14px;}
+  p{color:var(--charcoal-soft);font-size:0.98rem;margin-bottom:16px;max-width:720px;}
+  p strong{color:var(--ink);font-weight:500;}
+  ul{margin:0 0 16px 20px;color:var(--charcoal-soft);font-size:0.98rem;max-width:700px;}
+  li{margin-bottom:10px;}
+  li strong{color:var(--ink);font-weight:500;}
+  .body-link{color:var(--bronze);border-bottom:1px solid transparent;transition:border-color .3s;}
+  .body-link:hover{border-color:var(--bronze);}
+  .rule{width:64px;height:1px;background:var(--hairline);margin:60px 0 0;}
+
+  footer{
+    background:var(--charcoal);border-top:1px solid rgba(243,239,232,0.12);
+    padding:34px 0;
+  }
+  footer .wrap{
+    max-width:1180px;display:flex;align-items:center;justify-content:space-between;
+    flex-wrap:wrap;gap:16px;
+  }
+  footer .foot-note{color:#8A8272;font-size:0.76rem;letter-spacing:0.02em;}
+  .foot-links{display:flex;gap:28px;}
+  .foot-links a{
+    color:#B5AC9C;font-size:0.78rem;letter-spacing:0.05em;
+    border-bottom:1px solid transparent;transition:color .3s,border-color .3s;
+  }
+  .foot-links a:hover{color:var(--bronze);border-color:var(--bronze);}
+  ::selection{background:var(--bronze);color:var(--cream);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-brand"><span>E A Santos</span></div>
+    <a class="nav-back" href="index.html">&larr; Back to Home</a>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="wrap">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <div class="effective">Effective July 26, 2026 &nbsp;&middot;&nbsp; Last updated July 26, 2026</div>
+
+    <p>E A Santos Investments Inc. ("the firm," "we," "us") is committed to protecting personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act</em> (Canada) ("PIPEDA") and the <em>Personal Information Protection Act</em> (British Columbia) ("PIPA"). This policy describes how we collect, use, disclose, and safeguard personal information in connection with this website and our business activities.</p>
+
+    <h2>1. What We Collect</h2>
+    <p>We collect personal information only when it is reasonably necessary for our business purposes, including:</p>
+    <ul>
+      <li><strong>Contact information</strong> you choose to provide when you email us or correspond with us, such as your name, email address, and the contents of your message.</li>
+      <li><strong>Investor and partner information</strong> provided by existing or prospective partners in the course of a business relationship, which may include identification, financial, and eligibility information required to comply with applicable securities and anti&#8209;money&#8209;laundering laws.</li>
+      <li><strong>Technical information</strong> collected automatically by our hosting provider for security and operational purposes, such as IP address, browser type, and pages visited. A single cookie stores your light or dark display preference; we do not use advertising trackers.</li>
+    </ul>
+
+    <h2>2. How We Use It</h2>
+    <p>We use personal information to respond to correspondence; to evaluate, establish, and administer investor and partner relationships; to meet legal, regulatory, tax, and record&#8209;keeping obligations, including verifying investor eligibility under applicable securities law exemptions; and to maintain the security of our website and systems. We do not sell personal information, and we do not use it for third&#8209;party advertising.</p>
+
+    <h2>3. Consent</h2>
+    <p>By providing personal information to us, you consent to its collection, use, and disclosure as described in this policy. Where required by law, we will seek express consent. You may withdraw consent at any time, subject to legal or contractual restrictions and reasonable notice; withdrawing consent may limit our ability to maintain a business relationship with you.</p>
+
+    <h2>4. Disclosure</h2>
+    <p>We do not disclose personal information to third parties except: to service providers who support our operations (such as website hosting, email, legal, and accounting services) under obligations of confidentiality; where disclosure is required or permitted by law, including to securities regulators, tax authorities, or law enforcement; or in connection with a business transaction, subject to appropriate protections. Some service providers may store or process information outside of Canada, where it may be subject to the laws of those jurisdictions.</p>
+
+    <h2>5. Safeguards and Retention</h2>
+    <p>We protect personal information with safeguards appropriate to its sensitivity, including limiting access to those who need it for the purposes described above. We retain personal information only as long as necessary to fulfil those purposes and to meet legal and regulatory record&#8209;keeping requirements, after which it is securely destroyed or anonymized.</p>
+
+    <h2>6. Access and Correction</h2>
+    <p>Subject to limited exceptions under PIPEDA and PIPA, you may request access to the personal information we hold about you, and request correction of any inaccuracies, by contacting us at the address below. We will respond within the time limits required by applicable law.</p>
+
+    <h2>7. Children</h2>
+    <p>This website is intended for adults. We do not knowingly collect personal information from individuals under the age of majority.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The "Last updated" date above reflects the most recent revision. Continued use of this website after changes are posted constitutes acceptance of the revised policy.</p>
+
+    <h2>9. Contact and Complaints</h2>
+    <p>Questions, access requests, or complaints regarding this policy or our handling of personal information may be directed to:</p>
+    <p><strong>Privacy Officer</strong><br>
+    E A Santos Investments Inc.<br>
+    Metro Vancouver, British Columbia, Canada<br>
+    <a class="body-link" href="mailto:eli@easantos.ca">eli@easantos.ca</a></p>
+    <p>If you are not satisfied with our response, you may contact the Office of the Information and Privacy Commissioner for British Columbia or the Office of the Privacy Commissioner of Canada.</p>
+
+    <div class="rule"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#legal">Legal Disclaimer</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+    <div class="foot-note">&copy; 2026 E A Santos Investments Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
